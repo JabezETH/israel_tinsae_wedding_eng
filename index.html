@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <meta name="description" content="Wedding invitation website." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="openingOverlay" class="opening-overlay" role="dialog" aria-modal="true">
+      <div class="opening-card">
+        <p id="openingEyebrow" class="eyebrow"></p>
+        <h1 id="openingNames"></h1>
+        <p id="openingSubtitle" class="subtitle"></p>
+        <div class="opening-couple-wrap">
+          <img id="openingCoupleImage" src="" alt="" />
+        </div>
+        <button id="openInviteBtn" class="btn"></button>
+      </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto" autoplay playsinline>
+      <source src="" />
+      <span id="audioUnsupportedText"></span>
+    </audio>
+
+    <header class="hero">
+      <div class="hero-gradient"></div>
+      <div class="container">
+        <p id="heroEyebrow" class="eyebrow hero-animate"></p>
+        <h2 id="heroNames" class="hero-animate"></h2>
+        <div id="heroCalendar" class="hero-calendar hero-animate">
+          <p id="calendarMonth" class="cal-month"></p>
+          <p id="calendarDay" class="cal-day"></p>
+          <p id="calendarYear" class="cal-year"></p>
+          <p id="calendarTime" class="cal-time"></p>
+          <a
+            id="calendarLink"
+            class="calendar-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+        </div>
+        <button id="nextSectionBtn" class="btn btn-outline hero-animate" type="button"></button>
+        <button id="musicToggleBtn" class="btn btn-secondary" aria-pressed="false"></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container reveal">
+        <h3 id="inviteHeading"></h3>
+        <p id="inviteBody"></p>
+      </section>
+
+      <section id="detailsGrid" class="section container details-grid reveal"></section>
+
+      <section class="section container reveal">
+        <h3 id="galleryHeading"></h3>
+        <div id="gallery" class="gallery"></div>
+      </section>
+
+      <section class="section container reveal">
+        <h3 id="mapHeading"></h3>
+        <p id="mapDescription"></p>
+        <div class="map-wrap">
+          <iframe
+            id="mapIframe"
+            title=""
+            src=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a id="mapLink" class="map-link" href="" target="_blank" rel="noopener noreferrer"></a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="footerPrimary"></p>
+      <p id="footerSecondary" class="small"></p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
