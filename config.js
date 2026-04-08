@@ -9,7 +9,7 @@ window.INVITATION_CONFIG = {
     separator: " እና "
   },
   resources: {
-    musicSrc: "assets/Bereket-Tezera-Kingdom-Sound-Worship-Night-2025-Geuz-Aydeleh.m4a",
+    musicSrc: "assets/video_2026-04-08_15-01-57.mp3",
     openingBackgroundUrl:
       "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1700&q=80",
     heroBackgroundUrl:
