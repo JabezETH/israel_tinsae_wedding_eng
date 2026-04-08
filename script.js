@@ -142,12 +142,23 @@ function renderGallery() {
   if (!container) return;
 
   container.textContent = "";
+  const defaultFit = (config.gallery && config.gallery.defaultFit) || "cover";
+  const defaultPosition = (config.gallery && config.gallery.defaultPosition) || "center";
+
   for (const photo of config.gallery.photos) {
+    const item = document.createElement("div");
+    item.className = "gallery-item";
+
     const img = document.createElement("img");
+    img.className = "gallery-image";
     img.src = photo.src;
     img.alt = photo.alt;
     img.loading = "lazy";
-    container.appendChild(img);
+    img.style.objectFit = photo.fit || defaultFit;
+    img.style.objectPosition = photo.position || defaultPosition;
+
+    item.appendChild(img);
+    container.appendChild(item);
   }
 }
 
@@ -181,6 +192,8 @@ function applyConfig() {
 
   setText("openingEyebrow", config.opening.eyebrow);
   setText("openingSubtitle", config.opening.subtitle);
+  setText("openingVerse", config.opening.bibleVerse || "");
+  setText("openingVerseNote", config.opening.verseNote || "");
   setText("openInviteBtn", config.opening.openButtonLabel);
 
   setText("heroEyebrow", config.hero.eyebrow);
@@ -199,10 +212,23 @@ function applyConfig() {
     };
     openingCoupleImage.src = configuredImage || fallbackImage;
     openingCoupleImage.alt = config.resources.heroCoupleImageAlt || "Couple image";
+    openingCoupleImage.style.objectFit = config.resources.heroCoupleImageFit || "cover";
+    openingCoupleImage.style.objectPosition = config.resources.heroCoupleImagePosition || "center";
   }
 
   setText("inviteHeading", config.invitation.heading);
   setText("inviteBody", config.invitation.body);
+  const secondPageVerseEl = document.getElementById("secondPageVerse");
+  const secondPageVerseRefEl = document.getElementById("secondPageVerseRef");
+  const verseText = (config.invitation.verse || "").trim();
+  const verseRef = (config.invitation.verseReference || "").trim();
+  if (secondPageVerseEl) {
+    secondPageVerseEl.textContent = verseRef ? `${verseText}\n${verseRef}` : verseText;
+  }
+  if (secondPageVerseRefEl) {
+    secondPageVerseRefEl.textContent = "";
+    secondPageVerseRefEl.style.display = "none";
+  }
 
   setText("galleryHeading", config.gallery.heading);
   renderDetails();
