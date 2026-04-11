@@ -1,11 +1,11 @@
 window.INVITATION_CONFIG = {
   meta: {
-    pageTitle: "እስራዔል እና ትንሳዔ | የሰርግ ጥሪ",
-    description: "ወደ የእስራዔል እና ትንሳዔ ሰርግ በአክብሮት ተጠርተዋል"
+    pageTitle: "እስራኤል እና ትንሳኤ| የሰርግ ጥሪ",
+    description: "ወደ የእስራኤል እና ትንሳኤ ሰርግ በአክብሮት ተጠርተዋል"
   },
   couple: {
-    partner1: "እስራዔል",
-    partner2: "\nትንሳዔ",
+    partner1: "እስራኤል",
+    partner2: "\nትንሳኤ",
     separator: " እና "
   },
   resources: {
@@ -50,7 +50,7 @@ window.INVITATION_CONFIG = {
     heading: "ተጋብዘዋል!",
     body:
       "ይህንን ቀን አብረውን እንዲያከብሩ ጠርተኖታል",
-    verse: "' እግዚአብሔር ብቻ መራው፤ ምንም ባዕድ አምላክ ዐብሮት አልነበረም። '",
+    verse: "' እግዚአብሔር ብቻውንመራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም። '",
     verseReference: "ዘዳግም 32:12"
   },
   details: [
