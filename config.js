@@ -40,7 +40,7 @@ window.INVITATION_CONFIG = {
       time: "ቀን 8:00 ሰዓት",
       addToCalendarLabel: "ወደ ራስዎ የቀን መቁጠሪያ ያስገቡ",
       addToCalendarUrl:
-        "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Celebration&dates=20260425T170000Z/20260425T220000Z&details=Join+our+wedding+celebration&location=Ethiopian+Berhane+Wongel+Baptist+Church"
+        "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Celebration&location=Ethiopian+Berhane+Wongel+Baptist+Church"
     },
     nextSectionLabel: "የጥሪ ካርዱን ዝርዝር ይመልከቱ",
     musicPlayLabel: "መዝሙሩን ያጫውቱ",
@@ -96,7 +96,7 @@ window.INVITATION_CONFIG = {
     iframeTitle: "የቤተክርስቲያን አድራሻ",
     query: "Ethiopian Berhane Wongel Baptist Church",
     embedUrl: "https://www.google.com/maps?q=8.98707,38.7514201&z=17&output=embed",
-    openUrl: "https://www.google.com/maps/search/?api=1&query=Ethiopian+Berhane+Wongel+Baptist+Church",
+    openUrl: "https://www.google.com/maps?q=8.98707,38.7514201",
     openLabel: "Open in Google Maps"
   },
   footer: {
