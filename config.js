@@ -9,13 +9,13 @@ window.INVITATION_CONFIG = {
     separator: " እና "
   },
   resources: {
-    musicSrc: "assets/video_2026-04-08_15-01-57.mp3",
+    musicSrc: "assets/bg-music.mp3",
     openingBackgroundUrl:
       "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1700&q=80",
     heroBackgroundUrl:
       "https://images.unsplash.com/photo-1465495976277-4387d4b0d799?auto=format&fit=crop&w=1600&q=80",
     heroCoupleImageUrl:
-      "assets/photo_4_2026-04-07_12-16-06.jpg",
+      "assets/hero-couple.jpg",
     heroCoupleImageAlt: "Bride and groom portrait",
     heroCoupleImageFit: "cover",
     heroCoupleImagePosition: "center",
@@ -40,7 +40,7 @@ window.INVITATION_CONFIG = {
       time: "ቀን 8:00 ሰዓት",
       addToCalendarLabel: "ወደ ራስዎ የቀን መቁጠሪያ ያስገቡ",
       addToCalendarUrl:
-        "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Celebration&dates=20260419T170000Z/20260419T220000Z&details=Join+our+wedding+celebration&location=Rose+Garden+Hall+Los+Angeles"
+        "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Celebration&dates=20260425T170000Z/20260425T220000Z&details=Join+our+wedding+celebration&location=Ethiopian+Berhane+Wongel+Baptist+Church"
     },
     nextSectionLabel: "የጥሪ ካርዱን ዝርዝር ይመልከቱ",
     musicPlayLabel: "መዝሙሩን ያጫውቱ",
@@ -65,27 +65,27 @@ window.INVITATION_CONFIG = {
     defaultPosition: "center",
     photos: [
       {
-        src: "assets/photo_1_2026-04-07_12-16-06.jpg",
+        src: "assets/gallery-1.jpg",
         alt: "Couple portrait in formal attire"
       },
       {
-        src: "assets/photo_2_2026-04-07_12-16-06.jpg",
+        src: "assets/gallery-2.jpg",
         alt: "Couple smiling together outdoors"
       },
       {
-        src: "assets/photo_3_2026-04-07_12-16-06.jpg",
+        src: "assets/gallery-3.jpg",
         alt: "Couple photo shoot moment"
       },
       {
-        src: "assets/photo_4_2026-04-07_12-16-06.jpg",
+        src: "assets/hero-couple.jpg",
         alt: "Couple close-up portrait"
       },
       {
-        src: "assets/photo_5_2026-04-07_12-16-06.jpg",
+        src: "assets/gallery-4.jpg",
         alt: "Couple standing together"
       },
       {
-        src: "assets/photo_7_2026-04-07_12-16-06.jpg",
+        src: "assets/gallery-6.jpg",
         alt: "Couple candid moment"
       }
     ]
@@ -94,9 +94,9 @@ window.INVITATION_CONFIG = {
     heading: "አቅጣጫ",
     description: "ወደ ቤተክርስቲያን ለመምጣት ካርታውን ይጠቀሙ",
     iframeTitle: "የቤተክርስቲያን አድራሻ",
-    query: "ጎፋ ማዞሪያ ብርሃነ ወንጌል መጥምቃውያን ቤተክርስቲያን",
+    query: "Ethiopian Berhane Wongel Baptist Church",
     embedUrl: "https://www.google.com/maps?q=8.98707,38.7514201&z=17&output=embed",
-    openUrl: "https://www.google.com/maps/place/Ethiopian+Berhane+Wongel+Baptist+Church+%7C+Kera+%7C+%E1%8B%A8%E1%8A%A2%E1%89%B5%E1%8B%AE%E1%8C%B5%E1%8B%AB+%E1%89%A5%E1%88%AD%E1%88%83%E1%8A%90+%E1%8B%88%E1%8A%95%E1%8C%8C%E1%88%8D+%E1%88%98%E1%8C%A5%E1%88%9D%E1%89%83%E1%8B%8D%E1%8B%AB%E1%8A%95+%E1%89%A4%E1%89%B0+%E1%8A%AD%E1%88%AD%E1%88%B5%E1%89%B2%E1%8B%AB%E1%8A%95+%7C+%E1%89%84%E1%88%AB+%7C/@8.987029,38.7490274,466m/data=!3m1!1e3!4m6!3m5!1s0x164b8544f1eef263:0xb926dfc694b726ac!8m2!3d8.98707!4d38.7514201!16s%2Fg%2F11shhbm88b?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D",
+    openUrl: "https://www.google.com/maps/search/?api=1&query=Ethiopian+Berhane+Wongel+Baptist+Church",
     openLabel: "Open in Google Maps"
   },
   footer: {

@@ -13,19 +13,6 @@ const bgMusic = document.getElementById("bgMusic");
 let isMusicPlaying = false;
 let autoPlayFallbackBound = false;
 
-function normalizeImageUrl(url) {
-  if (!url) return "";
-  let match = url.match(/drive\.google\.com\/file\/d\/([^/]+)\//);
-  if (match && match[1]) {
-    return `https://drive.google.com/uc?export=view&id=${match[1]}`;
-  }
-  match = url.match(/[?&]id=([^&]+)/);
-  if (url.includes("drive.google.com") && match && match[1]) {
-    return `https://drive.google.com/uc?export=view&id=${match[1]}`;
-  }
-  return url;
-}
-
 function renderHeroCalendar() {
   const calendar = config.hero.calendar || {};
   setText("calendarMonth", calendar.month || "");
@@ -202,7 +189,7 @@ function applyConfig() {
 
   const openingCoupleImage = document.getElementById("openingCoupleImage");
   if (openingCoupleImage) {
-    const configuredImage = normalizeImageUrl(config.resources.heroCoupleImageUrl || "");
+    const configuredImage = config.resources.heroCoupleImageUrl || "";
     const fallbackImage =
       (config.gallery && config.gallery.photos && config.gallery.photos[0] && config.gallery.photos[0].src) ||
       config.resources.openingBackgroundUrl ||
